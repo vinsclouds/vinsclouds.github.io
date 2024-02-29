@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<h2>Responsive Navigation Bar dengan Icon</h2>
+<p>Coba kecilkan browser anda untuk melihat efek responsive.</p>
+
+
+
+
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Beranda</a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i> Cari</a> 
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Kontak</a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i> Masuk</a>
+</div>
+
+
+
+
+<div class='social-search-wrapper'>
+<div class='header_social'>
+  <a class='' href='http://facebook.com/' target='_blank'><i class='fa fa-facebook'/></i></a>
+  <a class='' href='https://twitter.com/rudy_arra/' target='_blank'><i class='fa fa-twitter'/></i></a>
+  <a class='' href='http://instagram.com/' target='_blank'><i class='fa fa-instagram'/></i></a>			
+</div>
+
+<div class='s-search'>
+<a class='search-icon' href='#' id='s-search-icn' title='Search here.'><i class='fa fa-search'/></i></a>
+<div class='close' id='search'>
+  <button class='close' type='button'>&#10005;</button>
+  <div class='vertical-align-middle'>
+  <div class='vertical-middle-inner'>
+     <form action='/search' id='s-searchform' method='get' role='search'>
+     <label class='heading_font'>Search</label>
+     <input name='q' placeholder='Type Your Search' type='search'/>
+    <button class='btn btn-primary' type='submit'><span class='fa fa-search'/></span></button>
+    </form>
+    <p class="search-note">Type and hit <span>Enter</span> to display search result</p>
+</div>	
+</div>	
+</div>
+</div>
+</div>
+
+
+
+
+</body>
+</html> 
+
